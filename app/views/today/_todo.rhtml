@@ -1,0 +1,14 @@
+        <li id="todo_<%= todo.id %>"> 
+          <%= link_to_remote image_tag("check.gif", :title => "Mark Complete"), 
+                    :url => {:controller => "task", :action => "mark_complete", :id => todo.task.id } %> 
+          <% if todo.task.complete %> 
+            <strike><em><%= todo.task.name %></em></strike> 
+          <% else %> 
+            <%= todo.task.name %> 
+          <% end %> 
+          <%= link_to image_tag("arrow_right.gif", :class => 'unschedule', 
+                                                   :title => 'Remove from Today'), 
+                                                   :controller => "todo", 
+                                                   :action => "destroy", 
+                                                   :id => todo.id %> 
+        </li> 

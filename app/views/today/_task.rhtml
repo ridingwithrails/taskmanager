@@ -1,0 +1,11 @@
+    <% form_for :task, :url => {:controller => :task, :action => :create}, :html => {:id => 'addtaskform'} do |t| %> 
+      <p> 
+        <label for='task_name'>Task:</label> 
+        <%= t.text_field 'name' %> 
+      </p> 
+      <p> 
+        <label for='task_name'>Due Date:</label> 
+        <%= t.text_field 'due_date' %> 
+      </p> 
+      <p><%= submit_tag "Add Task" %></p> 
+    <% end %>  

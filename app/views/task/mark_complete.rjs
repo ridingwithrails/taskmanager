@@ -1,0 +1,3 @@
+page.replace_html  'todo-list', :partial => '/today/todo', :collection => @todos 
+page.visual_effect :highlight, 'todo-list' 
+page.sortable 'todo-list', :url => { :action => 'sort' } 

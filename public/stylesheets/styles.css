@@ -1,0 +1,114 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: helvetica, arial, verdana, sans-serif;
+	text-align: center;
+
+	color: #1d282b;
+	background: #FFF url(/images/mtbg.gif) repeat-x top left;
+}
+span.duedate {font-size: small; font-style: italic; display: block; padding-bottom: 7px;}
+h1 { font-size: 150%; }
+h2 {padding: 9px 12px; 	padding-left: 15px; margin: 0; font-size: 180%; font-weight: normal; }
+h3 { margin: 0; padding: 0; font-size: 120%; }
+
+img { border: none;}
+#content {	text-align: left;
+	width: 790px;
+	margin-left: auto;
+	margin-right: auto;
+	color: #748388;
+	text-align: left;	
+}
+#header {width: 780px;height: 105px; }
+
+#topnav {
+	width: 100%;
+	display: block;
+	float: left;
+	line-height: 70px;
+}
+#topnav ul li {
+	display: inline;
+	float: left;
+}
+#topnav ul li a:link, #topnav ul li a:visited {
+	padding: 0px 15px 0px 25px;
+	float: left;
+	font-size: 160%;
+	color: #ebebeb;
+}
+
+table.calendar_helper { margin-left: 40px; }
+
+.unschedule {position: absolute; right: 5px;}
+
+ul#topnav {list-style: none; float: right;}
+ul#topnav li {
+	display: inline;
+	margin: 0 5px;
+	font-size: 20px;
+	font-weight: bold;
+	}
+ul#topnav li a {
+	color: #fff;
+	border: none;
+	background: none;
+	text-decoration: none;
+	}
+
+#primary { 	position: relative; width: 450px; float: left; }
+
+#primary h2 { color: #2c393d; }
+
+#primary h2 span { margin-left: 10px; font-size: 50%; color: #707c84; }
+
+#primary h3 {	font-family: tahoma, helvetica, arial, sans-serif;
+	position: absolute; top: 21px; left: -15px; text-align: right; font-size: 160%; font-weight: normal; color: #4a9eb8; width: 135px; }
+
+#primary h4 {	margin-left: 155px;}
+#primary h4 {margin-top: 25px; 	margin-bottom: 0px;	color: #668893; font-size: 150%; font-weight: normal; }
+
+
+#addtaskform label {font-size: 150%; font-weight: normal;}
+
+#sidebar { margin-top: 17px; }
+
+
+#sidebar {  width: 37%; float: right; }
+.sidebar-tasks { padding: 6px;
+  background-color: #fff;
+  border: 10px solid #dcdcdc;
+  margin: 10px 0 10px 0;
+  text-align: left;
+}
+label {display: block;}
+.sidebar-tasks h1, #main h1 {  color: #000;  font-family: Arial, Verdana, Helvetica, sans-serif; font-size: 24px; font-weight: bold; }
+form { padding: 13px; background-color: #F1F1F1;   border: 10px solid #dcdcdc;   margin: 20px 0 30px 0; }
+
+#login-form, #welcome { padding-top: 60px; }
+#main { padding: 6px;
+  background-color: #fff;
+  border: 10px solid #dcdcdc;
+  margin: 10px 0 10px 0;
+  text-align: left;
+  width: 100%;
+  float: left;
+}
+
+input { vertical-align: middle; }
+fieldset {margin: 1em 0; padding: 1em; border: 1px solid #ccc;}
+legend { font-weight: bold;}
+
+textarea {width: 300px; height: 100px; }
+input[type="text"] { width: 200px; }
+input.radio, input.checkbox, input.submit { width: auto;}
+input.checkbox {float: left; margin-right: 1em; vertical-align: middle;}
+
+input.submit {float: right;}
+
+
+
+
+
+

@@ -1,0 +1,27 @@
+<%=  link_to_function "Add Task", update_page { |page| 
+        page.visual_effect :toggle_blind, 'add_task' } %> 
+
+
+<div id="primary"> 
+  <div id="add_task" style="display:none;">
+    <%= render :partial => 'task' %>
+  </div> 
+
+  <div id='main'> 
+    <h1>Today's Tasks</h1> 
+    <ul id="todo-list"> 
+      <%= render :partial => 'todo', :collection => @todos %>
+    </ul> 
+  </div> 
+</div> 
+
+<div id="sidebar"> 
+  <%= sidebar_tasks "overdue" %> 
+  <%= sidebar_tasks "today" %> 
+  <%= sidebar_tasks "upcoming" %> 
+</div> 
+
+<%= sortable_element 'todo-list', 
+              :url => { :action => "sort" , :id => @today }, 
+              :complete => visual_effect(:highlight, 'todo-list')  %> 
+
